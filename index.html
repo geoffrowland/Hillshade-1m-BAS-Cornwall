@@ -3,7 +3,7 @@
           <head>
             <meta charset="utf-8">
             <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
-            <title>Hillshade Coast 2m</title>
+            <title>Hillshade Cornwall BAS 1m</title>
 
             <!-- Leaflet -->
             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -61,7 +61,7 @@
         //  .. OpenStreetMap
         var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-			minZoom: 6,
+			//minZoom: 6,
 			maxZoom: 18}
 		);
         //  .. Grey background
@@ -72,8 +72,8 @@
 			tms: true,
 			opacity: 1.0,
 			attribution: "",
-			minNativeZoom: 10,
-			minZoom: 8,
+			//minNativeZoom: 10,
+			minZoom: 10,
 			maxNativeZoom: 16,
 			maxZoom: 18
 		});
@@ -82,7 +82,7 @@
         var map = L.map('map', {
             center: [50.78955436791685, -3.52656581193959],
             zoom: 9,
-            minZoom: 6,
+            //minZoom: 6,
             maxZoom: 18,
             layers: [osm, lyr]
         });
